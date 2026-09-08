@@ -1,0 +1,48 @@
+:root {
+  color-scheme: light dark;
+  --bg: #fbfaf7;
+  --fg: #1c1b19;
+  --muted: #6b6760;
+  --accent: #2f5f8f;
+  --rule: #e6e2da;
+  --card: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161514;
+    --fg: #ebe7e0;
+    --muted: #a19b91;
+    --accent: #8fb6dd;
+    --rule: #2c2a27;
+    --card: #1f1d1b;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+header.site { display: flex; align-items: center; gap: 1rem; padding: 1.25rem 1.25rem 0; max-width: 42rem; margin: 0 auto; }
+header.site a { color: inherit; text-decoration: none; font-weight: 600; }
+.brand { display: flex; align-items: center; gap: 0.5rem; }
+.brand img { height: 1.75rem; width: auto; display: block; }
+header.site nav { margin-left: auto; display: flex; gap: 1rem; }
+header.site nav a { color: var(--muted); font-weight: 400; }
+h1 { font-size: 2.4rem; line-height: 1.15; letter-spacing: -0.01em; margin: 0 0 0.5rem; }
+h2 { font-size: 1.25rem; margin: 2.5rem 0 0.75rem; }
+p.lede { font-size: 1.25rem; color: var(--muted); margin: 0 0 2rem; }
+p, li { max-width: 38rem; }
+a { color: var(--accent); }
+ul { padding-left: 1.2rem; }
+li + li { margin-top: 0.5rem; }
+.features { list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; gap: 1rem; }
+.features li { background: var(--card); border: 1px solid var(--rule); border-radius: 12px; padding: 1rem 1.1rem; max-width: none; }
+.features strong { display: block; margin-bottom: 0.2rem; }
+.badge { display: inline-block; margin-top: 1.5rem; padding: 0.6rem 1rem; border: 1px solid var(--rule); border-radius: 10px; color: var(--muted); }
+footer { max-width: 42rem; margin: 0 auto; padding: 0 1.25rem 3rem; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--rule); padding-top: 1.25rem; }
+footer a { color: inherit; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.92em; }

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Draftline — Privacy Policy</title>
+  <meta name="description" content="Draftline's privacy policy. The app has no server of its own and collects no data about you.">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site">
+    <a class="brand" href="./">
+      <picture>
+        <source srcset="logo-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="logo-light.png" width="54" height="96" alt="">
+      </picture>
+      Draftline
+    </a>
+    <nav>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="lede">Last updated: 8 September 2026</p>
+
+    <p>Draftline is a Markdown editor that reads and writes files in your own GitHub repositories. It has no server of its own and collects no data about you.</p>
+
+    <h2>What Draftline stores on your device</h2>
+    <ul>
+      <li><strong>Your GitHub credential.</strong> Either an OAuth token issued by GitHub when you sign in, or a Personal Access Token you paste in. It is kept in the system Keychain and never written anywhere else.</li>
+      <li><strong>A cache of the repository content you open</strong> — file trees, files and your unsaved edits — so the app works offline and starts where you left off. It lives in the app's own sandbox and is removed when you delete the app.</li>
+      <li><strong>Your GitHub profile</strong> — login, display name and avatar URL — in the app's preferences, so the app can show who is signed in without a network request.</li>
+    </ul>
+
+    <h2>Where your data goes</h2>
+    <p>Draftline talks only to GitHub:</p>
+    <ul>
+      <li><code>api.github.com</code> receives your credential and the content you edit.</li>
+      <li><code>github.com</code> handles the "Sign in with GitHub" flow.</li>
+      <li><code>avatars.githubusercontent.com</code> serves your profile picture.</li>
+    </ul>
+    <p>Nothing is sent anywhere else. Requests use HTTPS. GitHub's handling of that data is covered by <a href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement">GitHub's privacy statement</a>.</p>
+
+    <h2>What Draftline does not do</h2>
+    <ul>
+      <li>No analytics, telemetry or crash reporting.</li>
+      <li>No advertising or tracking of any kind.</li>
+      <li>No third-party SDKs that talk to the network.</li>
+      <li>No copy of your files or credentials on any server run by us.</li>
+    </ul>
+
+    <h2>Removing your data</h2>
+    <p>Signing out (Settings → Sign Out) deletes the credential from the Keychain and the stored profile from the app's preferences. Deleting the app removes the cache. To revoke Draftline's access on GitHub's side, remove the Draftline GitHub App or the Personal Access Token in your <a href="https://github.com/settings/installations">GitHub settings</a>.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: see the <a href="support.html">support page</a>.</p>
+  </main>
+  <footer>
+    <a href="./">Draftline</a> · <a href="support.html">Support</a>
+  </footer>
+</body>
+</html>

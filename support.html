@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Draftline — Support</title>
+  <meta name="description" content="Get help with Draftline, report a problem, or ask a question.">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site">
+    <a class="brand" href="./">
+      <picture>
+        <source srcset="logo-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="logo-light.png" width="54" height="96" alt="">
+      </picture>
+      Draftline
+    </a>
+    <nav>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Support</h1>
+    <p class="lede">Draftline is made by one person. Questions and bug reports are welcome and read.</p>
+
+    <h2>Report a problem or ask a question</h2>
+    <p>Open an issue on <a href="https://github.com/cwoebker/draftline/issues">GitHub</a>. Please include which device and version you are on and, for anything involving a file, what the commit on GitHub looked like versus what you expected.</p>
+
+    <h2>Signing in</h2>
+    <p>Draftline signs in with GitHub through the Draftline GitHub App, or with a fine-grained personal access token. A token needs <em>Contents</em> read and write on the repositories you want to edit; add <em>Pull requests</em>, <em>Checks</em> and <em>Deployments</em> read to see the pull request row. If the app shows fewer checks than GitHub does, the token is missing one of those.</p>
+
+    <h2>Files over 1 MB</h2>
+    <p>GitHub's API does not serve files larger than 1 MB to apps, so Draftline cannot open them and says so. Edit those on GitHub directly.</p>
+
+    <h2>Removing your data</h2>
+    <p>Sign out in Settings to remove your credential, and delete the app to remove the cache. Details are in the <a href="privacy.html">privacy policy</a>.</p>
+  </main>
+  <footer>
+    <a href="./">Draftline</a> · <a href="privacy.html">Privacy policy</a>
+  </footer>
+</body>
+</html>
