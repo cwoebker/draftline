@@ -1,6 +1,6 @@
 # Draftline
 
-A Markdown editor for iPhone, iPad and Mac that uses your GitHub repositories as
+A Markdown editor for iPhone and iPad that uses your GitHub repositories as
 its file system. Open a repo, pick a branch, write, commit.
 
 Built for people who publish from a repository: blogs on Jekyll, Hugo, Astro or
@@ -20,7 +20,7 @@ Eleventy, documentation sites, and plain notes in git.
 - **Nothing leaves your device except to GitHub.** No analytics, no server of
   ours, no account to create.
 
-Coming to the App Store for iPhone, iPad and Mac.
+[Available on the App Store](https://apps.apple.com/us/app/draftline-markdown-editor/id6809581821) for iPhone and iPad.
 
 ## Signing in
 
